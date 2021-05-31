@@ -1,0 +1,104 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 20%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+} 
+h1 {
+  color: red;
+} 
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 50%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form method="POST" action='index'>
+  <div class="container">  
+  <center>  <h1>Applicant's Details</h1> </center>  
+  <hr>  
+  <label> Firstname* : </label>   
+<input type="text" name="firstname" placeholder= "" required />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label> Lastname* : </label>
+<input type="text" name="lastname" placeholder="" required />   
+
+
+<div>  
+<label>   
+Gender* :
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+</div>
+
+
+ <label for="email">Email</label>  
+ <input type="email" placeholder="" name="email" required>  <br>
+
+
+<label>State* : </label>
+<input type="text" name="source_state" placeholder="" required />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Source*: </label>
+<input type="text" name="source" placeholder="" required /><br><br>
+<label>Destination State* : </label>
+<input type="text" name="dest_state" placeholder="" required />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Destination*: </label>
+<input type="text" name="destination" placeholder="" required /><br><br>
+
+
+<label>Aadhar Number* :</label>  
+ <input type="text" placeholder="" name="aadhar_num" pattern="[1-9]{1}[0-9]{15}" required/>  <br>
+
+
+<label>Phone Number* :</label>
+      <input type="text" name="phone_num" placeholder="" title="Error Message" pattern="[1-9]{1}[0-9]{9}" required/><br>
+
+
+ <label for="date">Date of Travel* :</label>  
+ <input type="date" placeholder="" name="date_of_travel" required/>  <br>
+
+
+
+
+    <button type="submit" class="registerbtn">Register</button>      
+</form>  
+</body>  
+</html>
